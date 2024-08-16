@@ -5,15 +5,17 @@ import SkipNextIcon from '@mui/icons-material/SkipNext';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import { Button } from "@mui/material";
 import { PauseCircle } from "@mui/icons-material";
+import Marquee from "react-fast-marquee";
+
 
 const TrackList = () => {
     const { trackList, currentTrackName, playTrack,togglePlay,playPreviousTrack,playNextTrack,isPlaying } = useMusicPlayer();
 
     return (
       <div className="box-song">
-            <div>
-                <marquee behavior="scroll" direction="left" className="marquee">{currentTrackName || "No Music is playing"}</marquee>
-            </div>
+            <Marquee style={{margin:'10px 0 10px 0', fontSize:'23px' }}  speed={80} >
+                {currentTrackName || "No Music is playing"}
+            </Marquee>
             <div className="picture">
                 <img src="./slowmotion.jpg" alt="moon" />
             </div>
