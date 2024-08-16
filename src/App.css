@@ -17,18 +17,11 @@ body {
     box-shadow: 0px 0px 70px 0px #274684
 }
 .marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    animation: marquee 5s linear infinite;
-    font-size: 22px;
+    width: 400px;
+    font-size: 20px;
     margin: 10px 0 10px 0;
-  }
-  
-  @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-  }
+    font-weight: 600;
+}
 .picture img {
     border-radius: 20px;
     margin-bottom: 20px;

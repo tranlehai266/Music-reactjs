@@ -12,7 +12,7 @@ const TrackList = () => {
     return (
       <div className="box-song">
             <div>
-                <div className="marquee">{currentTrackName || "No Music is playing"}</div>
+                <marquee behavior="scroll" direction="left" className="marquee">{currentTrackName || "No Music is playing"}</marquee>
             </div>
             <div className="picture">
                 <img src="./slowmotion.jpg" alt="moon" />
